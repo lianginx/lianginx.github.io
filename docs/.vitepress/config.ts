@@ -4,7 +4,7 @@ import socialLinks from "./socialLinks";
 import sidebar from "./sidebar";
 
 export default defineConfig({
-  base: "/vitepress",
+  base: "/tech-note/",
   lang: "zh-CN",
   title: "Liang INX",
   description: "描述",

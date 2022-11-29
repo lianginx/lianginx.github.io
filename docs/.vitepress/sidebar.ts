@@ -61,6 +61,10 @@ export default [
         text: "英语单词后缀 -er",
         link: "/article/er.md",
       },
+      {
+        text: "廖雪峰 GitHub 教程笔记",
+        link: "/article/github.md",
+      },
     ],
   },
   {

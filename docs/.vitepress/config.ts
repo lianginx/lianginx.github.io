@@ -11,6 +11,9 @@ export default defineConfig({
   // titleTemplate: "标题模板",
   appearance: true, // true | false | "dark"
   lastUpdated: true, // 显示更新时间（Git 提交时间）
+  markdown: {
+    // lineNumbers: true, // 代码块行号
+  },
   themeConfig: {
     // logo: "/favicon.ico",
     nav,

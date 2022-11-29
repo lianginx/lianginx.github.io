@@ -1,28 +1,25 @@
 ---
-layout:     post
-title:      "廖雪峰 GitHub 教程笔记"
-#subtitle:   ""
-date:       2022-05-09 09:00:00
-author:     "Liang"
-catalog:    true
-header-style:   text
-#header-img: "img/post-bg/hello-world.jpg"
-#header-mask:  1
 tags:
-    - github
-    - git
-    - note
+  - github
+  - git
+  - note
 ---
 
-💡 Git 是目前世界上最先进的分布式版本控制系统。
+# 廖雪峰 GitHub 教程笔记
+
+> Git 是目前世界主流的分布式版本控制系统。
 
 ## 安装 Git
 
-- 官网下载：[https://git-scm.com/downloads](https://git-scm.com/downloads)
-- 镜像下载：[https://gitee.com/mirror-cn/git-for-windows](https://gitee.com/mirror-cn/git-for-windows)
-- 官方文档（简体中文）：[https://git-scm.com/book/zh/v2](https://git-scm.com/book/zh/v2)
+::: tip 相关链接
 
-**推荐跳过上面安装 Git，直接安装 Visual Studio Code，自带 Git 且可以使用 Github 账号登录，提供可视化版本管理界面和全中文命令说明。**
+- 官网：[https://git-scm.com/downloads](https://git-scm.com/downloads)
+- 镜像：[https://gitee.com/mirror-cn/git-for-windows](https://gitee.com/mirror-cn/git-for-windows)
+- 官方文档：[https://git-scm.com/book/zh/v2](https://git-scm.com/book/zh/v2)
+
+:::
+
+推荐跳过上面安装 Git，直接安装 Visual Studio Code，自带 Git 且可以使用 Github 账号登录，提供可视化版本管理界面和全中文命令说明。
 
 ### 配置仓库的全局用户名和邮箱
 
@@ -191,11 +188,11 @@ git rm <file_name>
 
 1. 创建 SSH Key 并连接 GitHub 如果用户目录下没有 .ssh 目录，则需要创建一个 SSH Key
 2. 邮箱参数换成自己的邮箱，配置过程使用默认值，无需密码。
-    
-    ```
-     ssh-keygen -t rsa -C "youremail@example.com"
-    ```
-    
+
+   ```
+    ssh-keygen -t rsa -C "youremail@example.com"
+   ```
+
 3. 登陆 GitHub -> Settings -> SSH Key -> Add SSH Key，填上任意 Title，在 Key 文本框里粘贴 id_rsa.pub 文件的内容。
 4. 创建远程库并同步或克隆登陆 GitHub -> 右上角 New Repository -> 填写 Repository Name -> 点击 Create repository，创建一个仓库。
 5. 同步本地和远程库：
@@ -232,7 +229,7 @@ Git 鼓励大量使用分支，这样更安全。
 
 ### 查看所有分支
 
-参数 * 表示查看当前分支。
+参数 \* 表示查看当前分支。
 
 ```
 git branch
@@ -382,13 +379,13 @@ git branch --set-upstream-to=<origin/origin_branch_name> <branch_name>
 ### 哪些分支需要及时推送？
 
 - **master**
-主分支，因此要时刻与远程同步；
+  主分支，因此要时刻与远程同步；
 - **dev**
-开发分支，团队所有成员都需要在上面工作，所以也需要与远程同步；
+  开发分支，团队所有成员都需要在上面工作，所以也需要与远程同步；
 - **bug**
-只用于在本地修复 bug，没必要推到远程，除非老板要看看你每周到底修复了几个 bug；
+  只用于在本地修复 bug，没必要推到远程，除非老板要看看你每周到底修复了几个 bug；
 - **feature**
-是否推到远程，取决于你是否和你的小伙伴合作在上面开发；
+  是否推到远程，取决于你是否和你的小伙伴合作在上面开发；
 
 ## 十、Rebase（变基）
 

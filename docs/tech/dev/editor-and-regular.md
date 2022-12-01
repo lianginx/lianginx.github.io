@@ -22,13 +22,13 @@ tags:
 
 按住 `Option` 用鼠标点击任意行可插入多个光标，此时输入内容，多个光标会同步插入。
 
-![多行同步插入](img/editor-and-regular/多行同步插入.gif)
+![多行同步插入](/img/editor-and-regular/多行同步插入.gif)
 
 **同步追加**
 
 选中多行文本，按下 `Option + Shift + I`，此时选中行行尾出现多个光标，输入内容，多个光标会同步追加。
 
-![多行同步追加](img/editor-and-regular/多行同步追加.gif)
+![多行同步追加](/img/editor-and-regular/多行同步追加.gif)
 
 **选中相同文本并同步替换／插入**
 
@@ -36,7 +36,7 @@ tags:
 
 按下方向键可以取消选中，此时输入内容不会替换选中的文本。
 
-![选中相同文本并同步替换／插入](img/editor-and-regular/选中相同字符并同步替换.gif)
+![选中相同文本并同步替换／插入](/img/editor-and-regular/选中相同字符并同步替换.gif)
 
 ### 大小写转换
 
@@ -44,7 +44,7 @@ tags:
 
 如果全局语言为中文，也可以输入 `转换` 查看对应命令。
 
-![大小写转换](./img/editor-and-regular/regular.png)
+![大小写转换](/img/editor-and-regular/regular.png)
 
 ### 查找替换
 
@@ -57,7 +57,7 @@ tags:
 
 点击查找输入框右侧的第三个按钮或快捷键 `Command + Option + R` 开启正则表达式匹配。
 
-![开启正则匹配](./img/editor-and-regular/regular.png)
+![开启正则匹配](/img/editor-and-regular/regular.png)
 
 ## 正则表达式
 

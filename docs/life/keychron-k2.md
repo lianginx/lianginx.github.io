@@ -1,7 +1,7 @@
 ---
 tags:
-    - life
-    - instruction
+  - life
+  - instruction
 ---
 
 # Keychron K2 键盘使用说明
@@ -37,7 +37,7 @@ tags:
 
 ## 功能说明
 
-![20220603220007](https://s2.loli.net/2022/06/03/uIqk7rxeDmAj6aU.png)
+![keychron-k2](/img/keychron-k2.png)
 
 ### LED 指示灯
 

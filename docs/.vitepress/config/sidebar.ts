@@ -65,6 +65,18 @@ export default [
         text: "廖雪峰 GitHub 教程笔记",
         link: "/article/github.md",
       },
+      {
+        text: "macOS 常用浏览器使用说明",
+        link: "/article/browser-instructions.md",
+      },
+      {
+        text: "【视频笔记】租房防骗避坑指南",
+        link: "/article/renting-guide.md",
+      },
+      {
+        text: "Markdown 入门手册",
+        link: "/article/markdown.md",
+      },
     ],
   },
   {

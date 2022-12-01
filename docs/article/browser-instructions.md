@@ -1,16 +1,9 @@
 ---
-layout:     post
-title:      "macOS 常用浏览器使用说明"
-subtitle:   "Chrome/Edge/Safari"
-date:       2022-05-09 10:00:00
-author:     "Liang"
-catalog:    true
-header-style:   text
-#header-img: "img/post-bg/hello-world.jpg"
-#header-mask:  1
 tags:
-    - browser
+  - browser
 ---
+
+# macOS 常用浏览器使用说明
 
 Edge 浏览器太好用了，Safari 等其他浏览器用的很少，常用快捷键基本上所有浏览器都是通用，有空再整理吧！
 
@@ -21,7 +14,6 @@ Edge 浏览器太好用了，Safari 等其他浏览器用的很少，常用快�
 | ⌘              | caommand        | ⇧              | shift             |
 | ⌥              | option（Alt）   | ⇪              | caps lock（大写） |
 | ⌃              | control（Ctrl） | ⌫              | delete            |
-
 
 ## Microsoft Edge
 
@@ -39,7 +31,6 @@ Edge 浏览器太好用了，Safari 等其他浏览器用的很少，常用快�
 | ⌘ + M/H    | 最小化 / 隐藏当前窗口                       |
 | ⌘ + Q      | 长按 / 连续按两次退出浏览器程序             |
 
-
 ### 地址栏
 
 | **快捷键**               | **说明**                                      |
@@ -48,7 +39,6 @@ Edge 浏览器太好用了，Safari 等其他浏览器用的很少，常用快�
 | `baidu` + Tab            | 使用百度搜索                                  |
 | ⌃ + Enter／⌃ + ⇧ + Enter | 补全`www.`和`.com`并在当前页面 / 新标签页打开 |
 | ⌘ + Enter／⌘ + ⇧ + Enter | 在后台 / 前台新标签页打开                     |
-
 
 ### 功能
 
@@ -61,7 +51,6 @@ Edge 浏览器太好用了，Safari 等其他浏览器用的很少，常用快�
 | ⌘ + ⇧ + J  | 打开下载内容         |
 | ⌘ + ⇧ + ⌫  | 清除浏览数据         |
 | ⌘ + ⇧ + M  | 切换账号             |
-
 
 ### 网页
 
@@ -76,7 +65,6 @@ Edge 浏览器太好用了，Safari 等其他浏览器用的很少，常用快�
 | ⌘ + -/=             | 缩小 / 放大网页缩放级别         |
 | ⌘ + 0               | 重置网页缩放级别                |
 | ⌘ + ⇧ + S           | 网页截图（区域 / 整个网页）     |
-
 
 ### 开发
 

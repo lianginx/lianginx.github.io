@@ -1,21 +1,31 @@
 import { defineConfig } from "vitepress";
-import nav from "./nav";
-import socialLinks from "./socialLinks";
-import sidebar from "./sidebar";
+import nav from "./config/nav";
+import socialLinks from "./config/socialLinks";
+import sidebar from "./config/sidebar";
 
 export default defineConfig({
   base: "/tech-note/",
   lang: "zh-CN",
   title: "Liang INX",
-  // description: "描述",
-  // titleTemplate: "标题模板",
-  appearance: true, // true | false | "dark"
-  lastUpdated: true, // 显示更新时间（Git 提交时间）
+  description: "Liang's Blog",
+  appearance: true,
+  lastUpdated: true,
   markdown: {
-    // lineNumbers: true, // 代码块行号
+    // lineNumbers: true,
   },
   themeConfig: {
     // logo: "/favicon.ico",
+    outline: "deep",
+    outlineTitle: "目录",
+    lastUpdatedText: "更新时间",
+    docFooter: {
+      prev: "上一页",
+      next: "下一页",
+    },
+    editLink: {
+      pattern: "https://github.com/liang-n/tech-note/edit/master/docs/:path",
+      text: "在 GitHub 上编辑本章内容",
+    },
     nav,
     socialLinks,
     sidebar,

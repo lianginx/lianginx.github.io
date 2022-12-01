@@ -13,17 +13,17 @@ tags:
 
 第一步，打开 `允许局域网连接` 或 `Allow LAN` 开关。
 
-![clashx](https://s2.loli.net/2022/10/25/6AxSg23wXLQGJza.png)
+![clashx](/img/clashx-allow-lan/clashx-allow-lan-1.png)
 
 第二步：查看 PC 本机在局域网中的 IP 地址 `192.168.x.x`。
 
 以 macOS 为例，打开 `系统偏好设置` -> `网络` 即可查看自己的本机 IP：
 
-![20221025095112](https://s2.loli.net/2022/10/25/IWexoO9MPQFz4AS.png)
+![查看IP](/img/clashx-allow-lan/clashx-allow-lan-2.png)
 
 第三步：使用本机 IP 配置同一网络下其他设备的网络代理：`WiFi 感叹号` -> `配置代理` -> `手动`:
 
-![20221025100716](https://s2.loli.net/2022/10/25/pwiqY4ZPzVmDEky.png)
+![配置网络代理](/img/clashx-allow-lan/clashx-allow-lan-3.png)
 
 - 服务器：填写本机 IP `192.168.x.x`
 - 端口：填写 `7890`
@@ -31,4 +31,4 @@ tags:
 
 填写完成后保存，然后尝试打开 Google 测试一下，查看是否可以正常访问。
 
-(o゜▽゜)o☆[BINGO!]
+(o ゜ ▽ ゜)o☆[BINGO!]

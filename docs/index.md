@@ -2,24 +2,32 @@
 layout: home
 
 hero:
-  name: VitePress
-  text: Vite & Vue powered static site generator.
-  tagline: Lorem ipsum...
+  name: LIANG INX
+  text: 技术博客 & 日常笔记 ✏️
+  tagline: 🧑🏻‍💻 一名菜鸟前端工程师 希望文章能解决你的问题
   actions:
     - theme: brand
-      text: Get Started
-      link: /guide/what-is-vitepress
+      text: 查看更多文章
+      link: /tech/
     - theme: alt
-      text: View on GitHub
-      link: https://github.com/vuejs/vitepress
+      text: 在 GitHub 上查看
+      link: https://github.com/liang-n/tech-note
+
 features:
-  - icon: ⚡️
-    title: Vite, The DX that can't be beat
-    details: Lorem ipsum...
-  - icon: 🖖
-    title: Power of Vue meets Markdown
-    details: Lorem ipsum...
-  - icon: 🛠️
-    title: Simple and minimal, always
-    details: Lorem ipsum...
+  - icon: ✍️
+    title: Markdown 入门手册
+    details: 即刻上手开发/写作人员必备的轻量级标记语言，易读易写
+    link: /tech/other/markdown.html
+    linkText: 查看文章详情
+  - icon: 🔌
+    title: Visual Studio Code 扩展收集
+    details: 精选多款 VS Code 扩展，涵盖主题、日志、开发、文档相关优质扩展，提升使用体验
+    link: /tech/other/vscode-extensions.md
+    linkText: 查看文章详情
+  - icon: 🎉
+    title: YAML 入门教程
+    details: YAML 是一种数据序列化语言，用于替代 JSON 成为更方便读写配置文件
+    link: /tech/dev/yaml.md
+    linkText: 查看文章详情
+
 ---

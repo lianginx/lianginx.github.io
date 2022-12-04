@@ -68,6 +68,14 @@ export default {
           link: "/tech/other/markdown.md",
         },
         {
+          text: "Markdown 进阶技巧",
+          link: "/tech/other/markdown-advanced.md",
+        },
+        {
+          text: "VS Code 环境配置",
+          link: "/tech/other/vscode-config.md",
+        },
+        {
           text: "VS Code 扩展收集",
           link: "/tech/other/vscode-extensions.md",
         },
@@ -93,7 +101,12 @@ export default {
     },
     {
       text: "生活分享",
+      collapsible: true,
       items: [
+        {
+          text: "使用 Docker 搭建 Minecraft 服务端",
+          link: "/life/minecraft-server-docker.md",
+        },
         {
           text: "英语单词后缀 -er",
           link: "/life/er.md",
@@ -105,6 +118,20 @@ export default {
         {
           text: "Keychron K2 键盘使用说明",
           link: "/life/keychron-k2.md",
+        },
+      ],
+    },
+    {
+      text: "沧海遗珠",
+      collapsible: true,
+      items: [
+        {
+          text: "网管",
+          link: "/life/internet-cafe-administrator.md",
+        },
+        {
+          text: "小张和小丽",
+          link: "/life/xiaozhang-xiaoli.md",
         },
       ],
     },

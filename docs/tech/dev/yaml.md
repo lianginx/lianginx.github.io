@@ -6,12 +6,6 @@ tags:
 
 # YAML 入门教程
 
-> 菜鸟教程：https://www.runoob.com/w3cnote/yaml-intro.html  
-> YAML 语言教程：https://www.ruanyifeng.com/blog/2016/07/yaml.html  
-> YAML 备忘清单：https://wangchujiang.com/reference/docs/yaml.html
-
-> JS-YAML 在线解析器：https://nodeca.github.io/js-yaml/
-
 YAML 是一种数据序列化语言，用于方便的读写配置文件，属于 JSON 的超集。
 
 YAML 语言规则如下：
@@ -22,6 +16,10 @@ YAML 语言规则如下：
 - 缩进的空格数目不重要，只要相同层级的元素左侧对齐即可
 - 文件使用 `.yaml` 或 `.yml` 后缀结尾
 - 使用 `#` 表示注释
+
+:::tip 在线工具
+使用 [JS-YAML 在线解析工具](https://nodeca.github.io/js-yaml/) 在线测试语法，将 YAML 转为 JavaScript 对象。
+:::
 
 ## 入门
 
@@ -186,3 +184,9 @@ friends:
   ]
 }
 ```
+
+## 参考文档
+
+- [菜鸟教程](https://www.runoob.com/w3cnote/yaml-intro.html)
+- [YAML 语言教程](https://www.ruanyifeng.com/blog/2016/07/yaml.html)
+- [YAML 备忘清单](https://wangchujiang.com/reference/docs/yaml.html)

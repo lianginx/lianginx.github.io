@@ -1,9 +1,16 @@
 ---
 layout: page
+
+title: INX 应用商店
+titleTemplate: &intro 致力于推广各类高品质软件的在线应用商店 
+description: *intro
 ---
 
 <script setup>
+import { ref } from "vue";
+import { useData } from 'vitepress';
 import AppStore from "/.vitepress/theme/layouts/appStore.vue";
+
 import IconRectanglePro from "/img/app-icon/rectangle-pro.webp";
 import IconHapiGo from "/img/app-icon/hapigo.webp";
 import IconTuYa from "/img/app-icon/tuya.webp";
@@ -15,9 +22,10 @@ import IconOpenEmu from "/img/app-icon/openemu.webp";
 import IconShottr from "/img/app-icon/shottr.webp";
 import IconUsbfistman from "/img/app-icon/usbfistman.webp";
 
+const { frontmatter } = useData();
 const pageInfo = {
-  title: 'INX 应用商店',
-  titleTemplate: '致力于推广各类高品质软件的在线应用商店',
+  title: frontmatter.value.title,
+  titleTemplate: frontmatter.value.description,
 };
 const apps = [
   {

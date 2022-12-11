@@ -4,16 +4,16 @@ layout: page
 
 <script setup>
 import AppStore from "/.vitepress/theme/layouts/appStore.vue";
-import IconRectanglePro from "/img/app-icon/rectangle-pro.png";
-import IconHapiGo from "/img/app-icon/hapigo.png";
-import IconTuYa from "/img/app-icon/tuya.png";
-import IconHyperSwitch from "/img/app-icon/hyperswitch.png";
-import IconKarbinerElements from "/img/app-icon/karabiner-elements.png";
-import IconMacCopier from "/img/app-icon/maccopier.png";
-import IconMenuBarX from "/img/app-icon/menubarx.png";
-import IconOpenEmu from "/img/app-icon/openemu.png";
-import IconShottr from "/img/app-icon/shottr.png";
-import IconUsbfistman from "/img/app-icon/usbfistman.png";
+import IconRectanglePro from "/img/app-icon/rectangle-pro.webp";
+import IconHapiGo from "/img/app-icon/hapigo.webp";
+import IconTuYa from "/img/app-icon/tuya.webp";
+import IconHyperSwitch from "/img/app-icon/hyperswitch.webp";
+import IconKarbinerElements from "/img/app-icon/karabiner-elements.webp";
+import IconMacCopier from "/img/app-icon/maccopier.webp";
+import IconMenuBarX from "/img/app-icon/menubarx.webp";
+import IconOpenEmu from "/img/app-icon/openemu.webp";
+import IconShottr from "/img/app-icon/shottr.webp";
+import IconUsbfistman from "/img/app-icon/usbfistman.webp";
 
 const pageInfo = {
   title: 'INX 应用商店',

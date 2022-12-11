@@ -1,14 +1,14 @@
 <template>
   <Layout>
     <template #doc-before>
-      <Tag :items="frontmatter.tags" />
+      <Tag v-if="frontmatter.tags" :items="frontmatter.tags" />
     </template>
   </Layout>
 </template>
 
 <script setup>
-import { useData } from 'vitepress';
-import DefaultTheme from 'vitepress/theme';
+import { useData } from "vitepress";
+import DefaultTheme from "vitepress/theme";
 import Tag from "../components/Tag.vue";
 
 const { Layout } = DefaultTheme;

@@ -10,7 +10,10 @@ defineProps<{
   <div>
     <div class="root">
       <a :href="item.link" target="_blank"
-        ><img class="icon" :src="item.icon" :alt="item.name"
+        ><img
+          class="icon"
+          :src="`/img/app-icon/${item.name.replace(' ', '-')}.png`"
+          :alt="item.name"
       /></a>
       <div class="info">
         <span>{{ item.updated }}</span> | <span>{{ item.category }}</span>

@@ -13,7 +13,9 @@ defineProps<{
       <a :href="item.link" target="_blank"
         ><img
           class="icon"
-          :src="withBase(`/img/app-icon/${item.name.replace(' ', '-')}.png`)"
+          :src="`/img/app-icon/${item.name
+            .toLowerCase()
+            .replace(' ', '-')}.png`"
           :alt="item.name"
       /></a>
       <div class="info">

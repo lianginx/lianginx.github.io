@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { AppItemType } from "../../types";
+import { withBase } from "vitepress";
 
 defineProps<{
   item: AppItemType;
@@ -12,7 +13,7 @@ defineProps<{
       <a :href="item.link" target="_blank"
         ><img
           class="icon"
-          :src="`/img/app-icon/${item.name.replace(' ', '-')}.png`"
+          :src="withBase(`/img/app-icon/${item.name.replace(' ', '-')}.png`)"
           :alt="item.name"
       /></a>
       <div class="info">

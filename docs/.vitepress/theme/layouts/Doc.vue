@@ -13,6 +13,4 @@ import Tag from "../components/Tag.vue";
 
 const { Layout } = DefaultTheme;
 const { frontmatter } = useData();
-
-console.log(frontmatter.value);
 </script>

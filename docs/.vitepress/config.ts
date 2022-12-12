@@ -10,11 +10,10 @@ export default defineConfig({
   description: "Liang's Blog",
   appearance: true,
   lastUpdated: true,
-  markdown: {
-    // lineNumbers: true,
-  },
+  head: [
+    ["link", { rel: "icon", href: "favicon.ico" }],
+  ],
   themeConfig: {
-    // logo: "/favicon.ico",
     outline: "deep",
     outlineTitle: "目录",
     lastUpdatedText: "更新时间",

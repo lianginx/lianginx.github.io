@@ -6,7 +6,7 @@ titleTemplate: &intro 致力于推广各类高品质软件的在线应用商店
 description: *intro
 ---
 
-<script setup>
+<script setup lang="ts">
 import { ref } from "vue";
 import { useData } from 'vitepress';
 import AppStore from "/.vitepress/theme/layouts/appStore.vue";
@@ -33,7 +33,7 @@ const pageInfo = {
   titleTemplate: frontmatter.value.description,
 };
 const apps = [
-   {
+  {
     name: "ClashX",
     intro: "方便快捷的管理/切换 Host 文件",
     link: "https://github.com/yichengchen/clashX",
@@ -109,7 +109,7 @@ const apps = [
       "代码片段",
       "Markdown",
     ],
-  },{
+  }, {
     name: "Rectangle Pro",
     intro: "使用键盘快捷键来移动/调整窗口大小",
     link: "https://rectangleapp.com/pro",

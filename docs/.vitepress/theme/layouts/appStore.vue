@@ -1,14 +1,19 @@
 <script setup lang="ts">
+import { ref } from "vue";
 import type { AppItemType } from "../../types";
 import AppItem from "../components/AppItem.vue";
 
-defineProps<{
+const props = defineProps<{
   pageInfo: {
     title: string;
     titleTemplate: string;
   };
   apps: AppItemType[];
 }>();
+const category = ref({
+  items: ['全部', ...new Set(props.apps.map(v => v.category))],
+  current: '全部',
+});
 </script>
 
 <template>
@@ -18,8 +23,15 @@ defineProps<{
         <h1>{{ pageInfo.title }}</h1>
         <div class="tip">{{ pageInfo.titleTemplate }}</div>
       </div>
+      <div class="category">
+        <div class="category-item" :class="{ 'category-item-active': category.current === item }"
+          v-for="item in category.items" :key="item" @click="category.current = item">{{ item }}</div>
+      </div>
       <div class="content">
-        <AppItem v-for="app of apps" :item="app" />
+        <AppItem v-for="app of apps.filter(v => {
+          if (category.current === category.items[0]) return true;
+          return v.category === category.current;
+        })" :item="app" />
       </div>
     </div>
   </div>
@@ -52,6 +64,29 @@ h1 {
   text-align: center;
   justify-content: center;
   padding: var(--pd-px);
+}
+
+.category {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: var(--pd-px);
+}
+
+.category-item {
+  margin-right: var(--pd-px);
+  margin-bottom: var(--pd-px);
+  cursor: pointer;
+}
+
+.category-item:hover {
+  color: var(--vp-c-brand);
+}
+
+.category-item-active {
+  color: var(--vp-c-brand);
+  padding-bottom: 2px;
+  border-bottom: 1.5px solid var(--vp-c-brand);
 }
 
 .content {

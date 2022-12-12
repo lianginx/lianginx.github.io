@@ -6,7 +6,7 @@ export interface AppItemType {
   category: string;
   updated: string;
   charge: string;
-  chip: ("Inter" | "AppleChip")[];
+  chip: string[];
   size: string;
   tags?: string[];
 }

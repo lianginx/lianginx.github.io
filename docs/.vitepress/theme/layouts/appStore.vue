@@ -29,19 +29,23 @@ defineProps<{
 .root {
   --pd-px: 15px;
 }
+
 h1 {
   font-size: 1.8rem;
   font-weight: bold;
   line-height: 1.5;
 }
+
 .tip {
   font-size: small;
 }
+
 .root {
   margin: 0 auto;
   margin-bottom: 5%;
   padding: var(--pd-px);
 }
+
 .title {
   display: flex;
   flex-direction: column;
@@ -49,6 +53,7 @@ h1 {
   justify-content: center;
   padding: var(--pd-px);
 }
+
 .content {
   display: grid;
   padding: var(--pd-px);
@@ -67,6 +72,7 @@ h1 {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 @media (max-width: 500px) {
   .content {
     grid-template-columns: repeat(2, 1fr);

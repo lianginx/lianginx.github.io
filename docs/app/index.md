@@ -2,7 +2,7 @@
 layout: page
 
 title: INX 应用商店
-titleTemplate: &intro 致力于推广各类高品质软件的在线应用商店 
+titleTemplate: &intro 致力于推广各类高品质软件的在线应用商店
 description: *intro
 ---
 
@@ -21,6 +21,10 @@ import IconMenuBarX from "/img/app-icon/menubarx.webp";
 import IconOpenEmu from "/img/app-icon/openemu.webp";
 import IconShottr from "/img/app-icon/shottr.webp";
 import IconUsbfistman from "/img/app-icon/usbfistman.webp";
+import IconSwitchHosts from "/img/app-icon/switchhosts.webp";
+import IconPixelmatorPro from "/img/app-icon/pixelmator-pro.webp";
+import IconKeka from "/img/app-icon/keka.webp";
+import IconSnippetsLab from "/img/app-icon/snippets-lab.webp";
 
 const { frontmatter } = useData();
 const pageInfo = {
@@ -35,7 +39,7 @@ const apps = [
     icon: IconRectanglePro,
     category: "系统增强",
     updated: "2022-12-11",
-    charge: "免费10天",
+    charge: "免费10天+买断",
     chip: [
       "AppleChip"
     ],
@@ -43,13 +47,12 @@ const apps = [
     tags: [
       "窗口调整"
     ]
-  },
-  {
+  }, {
     name: "HapiGo",
     intro: "多合一启动器，即时搜索、快速预览及直接启动",
     link: "https://hapigo.com/",
     icon: IconHapiGo,
-    category: "系统增强",
+    category: "效率工具",
     updated: "2022-12-11",
     charge: "免费+订阅",
     size: "31.8MB",
@@ -61,8 +64,7 @@ const apps = [
       "剪贴板",
       "翻译"
     ]
-  },
-  {
+  }, {
     name: "HyperSwitch",
     intro: "还原 Windows 窗口切换",
     link: "https://bahoom.com/hyperswitch",
@@ -77,8 +79,7 @@ const apps = [
     tags: [
       "窗口切换"
     ]
-  },
-  {
+  }, {
     name: "Karabiner Elements",
     intro: "键盘/鼠标改键工具",
     link: "https://karabiner-elements.pqrs.org/",
@@ -93,8 +94,7 @@ const apps = [
     tags: [
       "改键"
     ]
-  },
-  {
+  }, {
     name: "MacCopier",
     intro: "自动复制短信验证码到剪贴板",
     link: "https://github.com/DreamSaddle/MacCopier",
@@ -109,8 +109,7 @@ const apps = [
     tags: [
       "改键"
     ]
-  },
-  {
+  }, {
     name: "图压",
     intro: "简单易用的图片压缩软件",
     link: "https://tuya.xinxiao.tech/",
@@ -126,8 +125,7 @@ const apps = [
     tags: [
       "图片压缩"
     ]
-  },
-  {
+  }, {
     name: "Android 文件传输",
     intro: "在 Mac 电脑和 Android 设备之间浏览和传输文件",
     link: "https://tuya.xinxiao.tech/",
@@ -142,8 +140,7 @@ const apps = [
     tags: [
       "文件传输"
     ]
-  },
-  {
+  }, {
     name: "MenubarX",
     intro: "Mac 菜单栏浏览器，可以在菜单栏固定任何网页",
     link: "https://menubarx.app/",
@@ -159,8 +156,7 @@ const apps = [
       "浏览器",
       "菜单栏增强"
     ]
-  },
-  {
+  }, {
     name: "OpenEmu",
     intro: "多合一掌机/街机模拟器，包括但不限于 GBA/NDS/FC/PSP/……",
     link: "https://openemu.org/",
@@ -175,8 +171,7 @@ const apps = [
     tags: [
       "游戏机模拟器"
     ]
-  },
-  {
+  }, {
     name: "Shottr",
     intro: "屏幕截图工具，支持取色/贴图/标注/测量/OCR/无痕打码/滚动截图……",
     link: "https://shottr.cc/",
@@ -193,7 +188,68 @@ const apps = [
       "图片打码",
       "OCR"
     ]
-  }
+  }, {
+    name: "SwitchHosts",
+    intro: "方便快捷的管理/切换 Host 文件",
+    link: "https://swh.app/",
+    icon: IconSwitchHosts,
+    category: "系统增强",
+    updated: "2022-12-12",
+    charge: "免费开源",
+    size: "81.8MB",
+    chip: [
+      "AppleChip",
+      "Windows",
+      "Linux"
+    ],
+    tags: [
+      "科学上网"
+    ]
+  }, {
+    name: "Pixelmator Pro",
+    intro: "简单易用的专业图像编辑工具",
+    link: "https://www.pixelmator.com/pro/",
+    icon: IconPixelmatorPro,
+    category: "图像编辑",
+    updated: "2022-12-12",
+    charge: "免费7天+买断",
+    size: "81.8MB",
+    chip: [
+      "AppleChip",
+    ],
+    tags: [],
+  }, {
+    name: "Keka",
+    intro: "小巧轻便的文件压缩工具",
+    link: "http://www.keka.io/zh-cn/",
+    icon: IconKeka,
+    category: "系统增强",
+    updated: "2022-12-12",
+    charge: "自愿付费",
+    size: "36.4MB",
+    chip: [
+      "AppleChip",
+    ],
+    tags: [
+      "文件压缩",
+    ],
+  }, {
+    name: "SnippetsLab",
+    intro: "代码片段 + Markdown 管理工具",
+    link: "https://www.renfei.org/snippets-lab/",
+    icon: IconSnippetsLab,
+    category: "效率工具",
+    updated: "2022-12-12",
+    charge: "买断",
+    size: "50.5MB",
+    chip: [
+      "AppleChip",
+    ],
+    tags: [
+      "代码片段",
+      "Markdown",
+    ],
+  },
 ];
 </script>
 

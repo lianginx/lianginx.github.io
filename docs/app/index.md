@@ -9,7 +9,7 @@ description: *intro
 <script setup lang="ts">
 import { ref } from "vue";
 import { useData } from 'vitepress';
-import AppStore from "/.vitepress/theme/layouts/appStore.vue";
+import AppStore from "/.vitepress/theme/layouts/AppStore.vue";
 
 import IconRectanglePro from "/img/app-icon/rectangle-pro.webp";
 import IconHapiGo from "/img/app-icon/hapigo.webp";

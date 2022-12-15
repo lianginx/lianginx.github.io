@@ -35,7 +35,7 @@ const pageInfo = {
 const apps = [
   {
     name: "ClashX",
-    intro: "方便快捷的管理/切换 Host 文件",
+    intro: "简单轻量化的代理客户端",
     link: "https://github.com/yichengchen/clashX",
     icon: IconClashX,
     category: "网络代理",

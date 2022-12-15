@@ -9,9 +9,7 @@ defineProps<{
 <template>
   <div>
     <div class="root">
-      <a :href="item.link" target="_blank"
-        ><img class="icon" :src="item.icon" :alt="item.name"
-      /></a>
+      <a :href="item.link" target="_blank"><img class="icon" :src="item.icon" :alt="item.name" /></a>
       <div class="info">
         <span>{{ item.updated }}</span> | <span>{{ item.category }}</span>
       </div>
@@ -21,10 +19,7 @@ defineProps<{
         <div class="tag" v-for="(value, key) in item.chip">
           {{ value }}
         </div>
-        <div
-          class="tag"
-          v-for="(value, key) in { charge: item.charge, size: item.size }"
-        >
+        <div class="tag" v-for="(value, key) in { charge: item.charge, size: item.size }">
           <div v-if="key === 'size'">{{ value }}</div>
           <div v-if="key === 'charge'">{{ value }}</div>
         </div>
@@ -48,6 +43,7 @@ defineProps<{
   transition: all 0.3s ease;
   margin-bottom: 10px;
 }
+
 .icon:hover {
   transform: scale(1.05);
 }
@@ -59,6 +55,7 @@ defineProps<{
   margin: 5px 0;
   word-break: break-all;
 }
+
 .name:hover {
   color: var(--vp-c-brand);
 }
@@ -75,6 +72,7 @@ defineProps<{
   flex-wrap: wrap;
   margin-top: auto;
 }
+
 .tag {
   padding: 0 4px;
   background: var(--vp-c-bg-mute);
@@ -84,6 +82,7 @@ defineProps<{
   line-height: 1.5;
   cursor: default;
 }
+
 .tag:hover {
   background-color: rgba(66, 184, 131, 0.1);
   color: var(--vp-c-brand);

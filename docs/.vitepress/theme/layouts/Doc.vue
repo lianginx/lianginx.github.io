@@ -6,7 +6,7 @@
   </Layout>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { useData } from "vitepress";
 import DefaultTheme from "vitepress/theme";
 import Tag from "../components/Tag.vue";

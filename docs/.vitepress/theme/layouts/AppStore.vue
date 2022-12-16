@@ -4,10 +4,6 @@ import type { AppItemType } from "../../types";
 import AppItem from "../components/AppItem.vue";
 
 const props = defineProps<{
-  pageInfo: {
-    title: string;
-    titleTemplate: string;
-  };
   apps: AppItemType[];
 }>();
 const category = ref({
@@ -19,10 +15,6 @@ const category = ref({
 <template>
   <div>
     <div class="root">
-      <div class="title">
-        <h1>{{ pageInfo.title }}</h1>
-        <div class="tip">{{ pageInfo.titleTemplate }}</div>
-      </div>
       <div class="category">
         <div class="category-item" :class="{ 'category-item-active': category.current === item }"
           v-for="item in category.items" :key="item" @click="category.current = item">{{ item }}</div>

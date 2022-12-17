@@ -1,8 +1,8 @@
 ---
 layout: page
 
-title: 藏书阁
-titleTemplate: &intro 致力于推广各类高品质软件的在线应用商店
+title: INX 卷书阁
+titleTemplate: &intro 一个人可以被毁灭 但是永远不能够被打败
 description: *intro
 ---
 

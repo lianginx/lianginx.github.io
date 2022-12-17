@@ -7,6 +7,7 @@ export default [
   { text: "技术 TECH", link: "/tech/" },
   { text: "日常 LIFE", link: "/life/" },
   { text: "应用 APP", link: "/app/" },
+  { text: "书籍 BOOK", link: "/book/" },
   {
     text: "工具 TOOL",
     items: [

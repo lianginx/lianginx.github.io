@@ -2,6 +2,50 @@ import { BookItemType } from "../.vitepress/types";
 
 export default <BookItemType[]>[
   {
+    title: "许三观卖血记",
+    author: ["余华"],
+    cover:
+      "https://img.in-x.cc/books/%E8%AE%B8%E4%B8%89%E8%A7%82%E5%8D%96%E8%A1%80%E8%AE%B0.jpg",
+    press: "作家出版社",
+    published: "2012-09",
+    ISBN: "9787506365680",
+    doubanLink: "https://book.douban.com/subject/4760224/",
+    format: "epub",
+    size: "303KB",
+    updated: "2022-12-18",
+    downloadLink:
+      "https://drive.google.com/file/d/1-6y4kWoDALgO75Ivzf2jlRtREG2GPwwk/view",
+  },
+  {
+    title: "白鹿原",
+    author: ["陈忠实"],
+    cover: "https://img.in-x.cc/books/%E7%99%BD%E9%B9%BF%E5%8E%9F.jpg",
+    press: "北京十月文艺出版社",
+    published: "2011-09-01",
+    ISBN: "9787530210116",
+    doubanLink: "https://book.douban.com/subject/6861664/",
+    format: null,
+    size: null,
+    updated: "2022-12-18",
+    downloadLink: null,
+  },
+  {
+    title: "老人与海（中英双语）",
+    author: ["[美]海明威"],
+    cover: "https://img.in-x.cc/books/%E8%80%81%E4%BA%BA%E4%B8%8E%E6%B5%B7.jpg",
+    press: "上海译文出版社",
+    originalTitle: "The old man and the sea",
+    translator: ["吴劳"],
+    published: "2012-02-01",
+    ISBN: "9787532756582",
+    doubanLink: "https://book.douban.com/subject/10469118/",
+    format: "epub",
+    size: "429KB",
+    updated: "2022-12-18",
+    downloadLink:
+      "https://drive.google.com/file/d/1gR6luQc52WH-h-wVYvKW0sKDRzKwRhIi/view",
+  },
+  {
     title: "美国反对美国",
     author: ["王沪宁"],
     cover:
@@ -11,7 +55,7 @@ export default <BookItemType[]>[
     ISBN: "9787532107100",
     doubanLink: "https://book.douban.com/subject/1418776/",
     format: "EPUB",
-    size: "320 KB",
+    size: "313KB",
     updated: "2022-12-16",
     downloadLink:
       "https://drive.google.com/file/d/1-rT7Aslk3TROP4Otx0DEKecLTDIh3mr8/view",
@@ -25,10 +69,10 @@ export default <BookItemType[]>[
     ISBN: "9787506366748",
     doubanLink: "https://book.douban.com/subject/20257858/",
     format: "EPUB",
-    size: "583 KB",
+    size: "570 KB",
     updated: "2022-12-15",
     downloadLink:
-      "https://drive.google.com/file/d/1WC45pYOaybdokIyzb6FCaS4VLj7Ez0c9/view",
+      "https://drive.google.com/file/d/1lLynQz9JE8wVQJvRt68Apd47gtMP79h5/view",
   },
   {
     title: "三体",
@@ -39,10 +83,10 @@ export default <BookItemType[]>[
     ISBN: "9787536692930",
     doubanLink: "https://book.douban.com/subject/2567698/",
     format: "epub",
-    size: "7.6 MB",
+    size: "1.9MB",
     updated: "2022-12-15",
     downloadLink:
-      "https://drive.google.com/file/d/1WC45pYOaybdokIyzb6FCaS4VLj7Ez0c9/view",
+      "https://drive.google.com/file/d/1d3K0V-pYX2OrHMgEVObbl2cP9dVfwB9t/view",
   },
   {
     title: "蚕丝：钱学森传",
@@ -55,7 +99,7 @@ export default <BookItemType[]>[
     ISBN: "9787508626277",
     doubanLink: "https://book.douban.com/subject/6024015/",
     format: "epub",
-    size: "241 KB",
+    size: "236 KB",
     updated: "2022-12-15",
     downloadLink:
       "https://drive.google.com/file/d/1WC45pYOaybdokIyzb6FCaS4VLj7Ez0c9/view",

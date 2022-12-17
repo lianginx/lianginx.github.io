@@ -19,14 +19,14 @@ defineEmits<{
           <img :src="book.cover" :alt="book.title">
         </div>
       </div>
-      <div class="title hover">{{ book.title }}</div>
-      <div class="content">
+      <div class="title hover" @click="() => $emit('update:current', book)">{{ book.title }}</div>
+      <div class=" content">
         <span class="author" v-for="person of book.author">{{ person }}</span>
         <div>
           <a class="hover" :href="book.doubanLink" target="_blank">
             <IconDouban class="dl-icon" />
           </a>
-          <a class="hover" :href="book.downloadLink" target="_blank">
+          <a class="hover" v-if="book.downloadLink" :href="book.downloadLink" target="_blank">
             <IconDownload class="dl-icon" />
           </a>
         </div>
@@ -40,7 +40,7 @@ defineEmits<{
   display: flex;
   flex-direction: column;
   justify-content: end;
-  height: 340px;
+  height: 300px;
 }
 
 .cover .cover-img {

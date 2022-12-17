@@ -25,6 +25,8 @@ export interface AppItemType {
 export interface BookItemType {
   /** 标题 */
   title: string;
+  /** 原作名 */
+  originalTitle?: string;
   /** 副标题 */
   subtitle?: string;
   /** 作者 */

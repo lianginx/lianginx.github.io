@@ -1,18 +1,31 @@
 <script setup lang="ts">
+import VButton from "../components/VButton.vue";
 import IconClose from "../components/icons/IconClose.vue";
 import type { BookItemType } from "../../types";
-import { ref, onMounted } from "vue";
+import BookDouban from "./BookDouban.vue";
 
 const props = defineProps<{
   book: BookItemType;
 }>();
 defineEmits(['onClose']);
-let isLoadedDouban = ref(false);
+
+function setInfo(book: BookItemType) {
+  return [
+    { name: '作者', value: book.author?.join('/'), },
+    { name: '译者', value: book.translator?.join('/'), },
+    { name: '出版社', value: book.press, },
+    { name: '出版时间', value: book.published, },
+    { name: 'ISBN', value: book.ISBN, },
+    { name: '文件格式', value: book.format?.toUpperCase(), },
+    { name: '文件大小', value: book.size, },
+    { name: '更新时间', value: book.updated, },
+  ].filter(v => v.value);
+}
 </script>
 
 <template>
   <div class="mask" @click="$emit('onClose')"></div>
-  <div class=" box">
+  <div class="box">
     <div class="box-title">
       <span>书籍详情</span>
       <IconClose class="icon-close" @click="$emit('onClose')" />
@@ -20,46 +33,25 @@ let isLoadedDouban = ref(false);
     <div class="book">
       <div class="cover">
         <img :src="book.cover" :alt="book.title">
+        <BookDouban v-if="book.doubanLink" :douban-link="book.doubanLink" />
       </div>
       <div class="info">
-        内容区
-        <!-- <div v-for="info in book">{{ info }}</div> -->
+        <p class="book-title">{{ book.title }}</p>
+        <p class="book-subtitle">{{ book.subtitle }}</p>
+        <div v-for="info in setInfo(book)">
+          <span>{{ info.name }}</span>：<span>{{ info.value }}</span>
+        </div>
+        <div style="margin-top: 0.5rem;">
+          <VButton v-if="book.doubanLink" text="豆瓣介绍" theme="alt" :link="book.doubanLink" />
+          <VButton v-if="book.downloadLink" text="立即下载" theme="brand" :link="book.downloadLink" />
+        </div>
       </div>
-      <div class="douban-box">
-        <iframe v-show="isLoadedDouban" class=" douban" :src="book.doubanLink" title="豆瓣评分" height="410" width="1200"
-          sandbox="" @load="() => isLoadedDouban = true"></iframe>
-        <p v-if="!isLoadedDouban">正在加载评分……</p>
-      </div>
+
     </div>
   </div>
 </template>
+
 <style scoped>
-.douban-box {
-  /* border: 1px solid #000; */
-  scroll-behavior: smooth;
-  position: relative;
-  width: 160px;
-  height: 160px;
-  overflow: hidden;
-}
-
-.douban-box p {
-  margin: 0 1rem;
-  font-size: small;
-}
-
-.douban {
-  position: absolute;
-  top: -230px;
-  right: -460px;
-  pointer-events: none;
-}
-</style>
-<style scoped>
-.show {
-  visibility: hidden;
-}
-
 .mask {
   display: flex;
   justify-content: center;
@@ -73,15 +65,12 @@ let isLoadedDouban = ref(false);
 
 .box {
   position: fixed;
-  margin: 0 auto;
-  bottom: 0;
+  top: 70px;
   right: 0;
-  left: 0;
+  bottom: 0;
   padding: 25px 30px;
-  border-radius: 10px 10px 0 0;
-  height: 85%;
-  width: 50%;
-  background: #fff;
+  width: 550px;
+  background: var(--vp-c-bg);
 }
 
 .box-title {
@@ -107,7 +96,7 @@ let isLoadedDouban = ref(false);
 
 .book {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 2rem;
   margin-top: 1rem;
 }
@@ -119,7 +108,7 @@ let isLoadedDouban = ref(false);
 }
 
 .cover img {
-  margin-bottom: 0.5rem;
+  margin-bottom: 2rem;
   border-radius: 0.25rem;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
   width: auto;
@@ -129,6 +118,22 @@ let isLoadedDouban = ref(false);
 }
 
 .info {
-  grid-column: span 2;
+  grid-column: span 4;
+  line-height: 1.8;
+}
+
+.book-title {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.book-subtitle {
+  font-size: small;
+  font-weight: bold;
+  margin-bottom: .75rem;
+}
+
+.button {
+  margin: 0.75rem 0.75rem 0 0;
 }
 </style>

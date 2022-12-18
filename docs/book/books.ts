@@ -1,4 +1,4 @@
-import { BookItemType } from "../.vitepress/types";
+import { BookItemType, BookCategory } from "../.vitepress/types";
 
 export default <BookItemType[]>[
   {
@@ -10,6 +10,7 @@ export default <BookItemType[]>[
     published: "2012-09",
     ISBN: "9787506365680",
     doubanLink: "https://book.douban.com/subject/4760224/",
+    category: ["文学"],
     format: "epub",
     size: "303KB",
     updated: "2022-12-18",
@@ -24,6 +25,7 @@ export default <BookItemType[]>[
     published: "2011-09-01",
     ISBN: "9787530210116",
     doubanLink: "https://book.douban.com/subject/6861664/",
+    category: ["文学"],
     format: null,
     size: null,
     updated: "2022-12-18",
@@ -39,6 +41,7 @@ export default <BookItemType[]>[
     published: "2012-02-01",
     ISBN: "9787532756582",
     doubanLink: "https://book.douban.com/subject/10469118/",
+    category: ["文学"],
     format: "epub",
     size: "429KB",
     updated: "2022-12-18",
@@ -54,6 +57,7 @@ export default <BookItemType[]>[
     published: "2012-10",
     ISBN: "9787532107100",
     doubanLink: "https://book.douban.com/subject/1418776/",
+    category: ["社会"],
     format: "EPUB",
     size: "313KB",
     updated: "2022-12-16",
@@ -68,6 +72,7 @@ export default <BookItemType[]>[
     published: "2012-10",
     ISBN: "9787506366748",
     doubanLink: "https://book.douban.com/subject/20257858/",
+    category: ["文学"],
     format: "EPUB",
     size: "570 KB",
     updated: "2022-12-15",
@@ -82,6 +87,7 @@ export default <BookItemType[]>[
     published: "2008-01",
     ISBN: "9787536692930",
     doubanLink: "https://book.douban.com/subject/2567698/",
+    category: ["科幻"],
     format: "epub",
     size: "1.9MB",
     updated: "2022-12-15",
@@ -98,6 +104,7 @@ export default <BookItemType[]>[
     published: "2011-04-01",
     ISBN: "9787508626277",
     doubanLink: "https://book.douban.com/subject/6024015/",
+    category: ["人物传记"],
     format: "epub",
     size: "236 KB",
     updated: "2022-12-15",

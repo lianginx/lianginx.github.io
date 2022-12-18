@@ -1,5 +1,5 @@
 import { DefaultTheme } from "vitepress";
-
+import bookSidebar from "../../book/category";
 export default {
   "/tech/": [
     {
@@ -136,4 +136,5 @@ export default {
       ],
     },
   ],
+  "/book/": bookSidebar,
 } as DefaultTheme.Sidebar;

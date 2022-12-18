@@ -3,12 +3,8 @@ import type { BookItemType } from "../../types";
 import IconDownload from "./icons/IconDownload.vue";
 import IconDouban from "./icons/IconDouban.vue";
 
-defineProps<{
-  book: BookItemType;
-}>();
-defineEmits<{
-  "update:current": BookItemType;
-}>();
+defineProps<{ book: BookItemType; }>();
+defineEmits<{ "update:current": BookItemType; }>();
 </script>
 
 <template>
@@ -132,5 +128,6 @@ defineEmits<{
 
 .hover:hover {
   color: var(--vp-c-brand);
+  stroke: var(--vp-c-brand);
 }
 </style>

@@ -7,7 +7,7 @@ export interface AppItemType {
   icon: string;
   /** 官网链接 */
   link: string;
-  /** 标题 */
+  /** 分类 */
   category: string;
   /** 更新时间 */
   updated: string;
@@ -51,4 +51,13 @@ export interface BookItemType {
   updated: string;
   /** 下载链接 */
   doubanLink?: string;
+  /** 分类 */
+  category?: BookCategory[];
+}
+
+export enum BookCategory {
+  "文学" = "文学",
+  "科幻" = "科幻",
+  "人物传记" = "人物传记",
+  "社会" = "社会",
 }

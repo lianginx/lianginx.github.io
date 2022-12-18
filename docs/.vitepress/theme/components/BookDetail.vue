@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import VButton from "../components/VButton.vue";
-import IconClose from "../components/icons/IconClose.vue";
 import type { BookItemType } from "../../types";
+import IconClose from "../components/icons/IconClose.vue";
+import VButton from "../components/VButton.vue";
 import BookDouban from "./BookDouban.vue";
 
-const props = defineProps<{
-  book: BookItemType;
-}>();
+defineProps<{ book: BookItemType; }>();
 defineEmits(['onClose']);
 
 function setInfo(book: BookItemType) {
@@ -41,17 +39,18 @@ function setInfo(book: BookItemType) {
         <div v-for="info in setInfo(book)">
           <span>{{ info.name }}</span>：<span>{{ info.value }}</span>
         </div>
-        <div style="margin-top: 0.5rem;">
+        <div class="btn-group">
           <VButton v-if="book.doubanLink" text="豆瓣介绍" theme="alt" :link="book.doubanLink" />
           <VButton v-if="book.downloadLink" text="立即下载" theme="brand" :link="book.downloadLink" />
         </div>
       </div>
-
     </div>
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+$mask-color: rgba(0, 0, 0, 0.3);
+
 .mask {
   display: flex;
   justify-content: center;
@@ -60,15 +59,15 @@ function setInfo(book: BookItemType) {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: $mask-color;
 }
 
 .box {
   position: fixed;
-  top: 70px;
+  top: 0;
   right: 0;
   bottom: 0;
-  padding: 25px 30px;
+  padding: 90px 30px;
   width: 550px;
   background: var(--vp-c-bg);
 }
@@ -88,10 +87,10 @@ function setInfo(book: BookItemType) {
   border-radius: 0.25rem;
   cursor: pointer;
   color: #9CA3AF;
-}
 
-.icon-close:hover {
-  background-color: #F3F4F6;
+  &:hover {
+    background-color: #F3F4F6;
+  }
 }
 
 .book {
@@ -105,16 +104,16 @@ function setInfo(book: BookItemType) {
   grid-column: span 1;
   height: 280px;
   width: 140px;
-}
 
-.cover img {
-  margin-bottom: 2rem;
-  border-radius: 0.25rem;
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 100%;
+  img {
+    margin-bottom: 2rem;
+    border-radius: 0.25rem;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
 
 .info {
@@ -133,7 +132,10 @@ function setInfo(book: BookItemType) {
   margin-bottom: .75rem;
 }
 
-.button {
-  margin: 0.75rem 0.75rem 0 0;
+.btn-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .5rem;
+  margin-top: 1rem;
 }
 </style>

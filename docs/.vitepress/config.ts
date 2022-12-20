@@ -1,4 +1,5 @@
 import { defineConfig } from "vitepress";
+import markdownItTextualUml from "markdown-it-textual-uml";
 import nav from "./config/nav";
 import socialLinks from "./config/socialLinks";
 import sidebar from "./config/sidebar";
@@ -10,9 +11,7 @@ export default defineConfig({
   description: "Liang's Blog",
   appearance: true,
   lastUpdated: true,
-  head: [
-    ["link", { rel: "icon", href: "favicon.ico" }],
-  ],
+  head: [["link", { rel: "icon", href: "favicon.ico" }]],
   themeConfig: {
     outline: "deep",
     outlineTitle: "目录",
@@ -28,5 +27,10 @@ export default defineConfig({
     nav,
     socialLinks,
     sidebar,
+  },
+  markdown: {
+    config: (md) => {
+      md.use(markdownItTextualUml);
+    },
   },
 });

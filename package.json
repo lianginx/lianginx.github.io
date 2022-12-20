@@ -12,5 +12,8 @@
   "devDependencies": {
     "sass": "^1.57.0",
     "vitepress": "^1.0.0-alpha.29"
+  },
+  "dependencies": {
+    "markdown-it-textual-uml": "^0.12.0"
   }
 }

@@ -1,7 +1,14 @@
 import { DefaultTheme } from "vitepress";
 import bookSidebar from "../../book/category";
+
 export default {
-  "/tech/": [
+  "/tech/": tech(),
+  "/life/": life(),
+  "/book/": bookSidebar,
+} as DefaultTheme.Sidebar;
+
+function tech(): DefaultTheme.SidebarGroup[] {
+  return [
     {
       text: "前言",
       items: [{ text: "README", link: "/tech/" }],
@@ -93,8 +100,11 @@ export default {
         },
       ],
     },
-  ],
-  "/life/": [
+  ];
+}
+
+function life(): DefaultTheme.SidebarGroup[] {
+  return [
     {
       text: "前言",
       items: [{ text: "README", link: "/life/" }],
@@ -122,6 +132,13 @@ export default {
       ],
     },
     {
+      text: "健康指南",
+      collapsible: true,
+      items: [
+        { text: "高尿酸血症与痛风指南", link: "/life/gout-hua-guideline.md" },
+      ],
+    },
+    {
       text: "沧海遗珠",
       collapsible: true,
       items: [
@@ -135,6 +152,5 @@ export default {
         },
       ],
     },
-  ],
-  "/book/": bookSidebar,
-} as DefaultTheme.Sidebar;
+  ];
+}

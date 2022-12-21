@@ -22,7 +22,7 @@ export default defineConfig({
     },
     editLink: {
       pattern:
-        "https://github.com/liang-n/lianginx.github.io/edit/master/docs/:path",
+        "https://github.com/lianginx/lianginx.github.io/edit/master/docs/:path",
       text: "在 GitHub 上编辑本章内容",
     },
     nav,

@@ -11,7 +11,7 @@ hero:
       link: /tech/
     - theme: alt
       text: 在 GitHub 上查看
-      link: https://github.com/liang-n/tech-note
+      link: https://github.com/lianginx/lianginx.github.io
 
 features:
   - icon: ✍️

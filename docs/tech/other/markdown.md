@@ -163,10 +163,10 @@ console.log("Hello world.");
 ## 图片
 
 ```markdown
-![我的头像](https://www.github.com/liang-n.png/)
+![我的头像](https://www.github.com/lianginx.png/)
 ```
 
-![我的头像](https://www.github.com/liang-n.png/)
+![我的头像](https://www.github.com/lianginx.png/)
 
 ## 引用块
 

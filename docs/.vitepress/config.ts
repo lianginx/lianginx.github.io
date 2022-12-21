@@ -5,7 +5,7 @@ import socialLinks from "./config/socialLinks";
 import sidebar from "./config/sidebar";
 
 export default defineConfig({
-  base: "/tech-note/",
+  base: "/",
   lang: "zh-CN",
   title: "Liang INX",
   description: "Liang's Blog",
@@ -21,7 +21,8 @@ export default defineConfig({
       next: "下一页",
     },
     editLink: {
-      pattern: "https://github.com/liang-n/tech-note/edit/master/docs/:path",
+      pattern:
+        "https://github.com/liang-n/lianginx.github.io/edit/master/docs/:path",
       text: "在 GitHub 上编辑本章内容",
     },
     nav,

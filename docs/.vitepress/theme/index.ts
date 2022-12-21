@@ -1,4 +1,4 @@
-// .vitepress/theme/index.js
+import "./styles/custom.css";
 import DefaultTheme from "vitepress/theme";
 import Doc from "./layouts/Doc.vue";
 

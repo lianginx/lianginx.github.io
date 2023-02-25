@@ -1,11 +1,11 @@
 import { BookItemType, BookCategory } from "../.vitepress/types";
+import env from "../.vitepress/config/env";
 
 export default <BookItemType[]>[
   {
     title: "许三观卖血记",
     author: ["余华"],
-    cover:
-      "https://img.in-x.cc/books/%E8%AE%B8%E4%B8%89%E8%A7%82%E5%8D%96%E8%A1%80%E8%AE%B0.jpg",
+    cover: "%E8%AE%B8%E4%B8%89%E8%A7%82%E5%8D%96%E8%A1%80%E8%AE%B0.jpg",
     press: "作家出版社",
     published: "2012-09",
     ISBN: "9787506365680",
@@ -20,7 +20,7 @@ export default <BookItemType[]>[
   {
     title: "白鹿原",
     author: ["陈忠实"],
-    cover: "https://img.in-x.cc/books/%E7%99%BD%E9%B9%BF%E5%8E%9F.jpg",
+    cover: "%E7%99%BD%E9%B9%BF%E5%8E%9F.jpg",
     press: "北京十月文艺出版社",
     published: "2011-09-01",
     ISBN: "9787530210116",
@@ -34,7 +34,7 @@ export default <BookItemType[]>[
   {
     title: "老人与海（中英双语）",
     author: ["[美]海明威"],
-    cover: "https://img.in-x.cc/books/%E8%80%81%E4%BA%BA%E4%B8%8E%E6%B5%B7.jpg",
+    cover: "%E8%80%81%E4%BA%BA%E4%B8%8E%E6%B5%B7.jpg",
     press: "上海译文出版社",
     originalTitle: "The old man and the sea",
     translator: ["吴劳"],
@@ -51,8 +51,7 @@ export default <BookItemType[]>[
   {
     title: "美国反对美国",
     author: ["王沪宁"],
-    cover:
-      "https://img.in-x.cc/books/%E7%BE%8E%E5%9B%BD%E5%8F%8D%E5%AF%B9%E7%BE%8E%E5%9B%BD.jpg",
+    cover: "%E7%BE%8E%E5%9B%BD%E5%8F%8D%E5%AF%B9%E7%BE%8E%E5%9B%BD.jpg",
     press: "上海文艺出版社",
     published: "2012-10",
     ISBN: "9787532107100",
@@ -67,7 +66,7 @@ export default <BookItemType[]>[
   {
     title: "生死疲劳",
     author: ["莫言"],
-    cover: "https://img.in-x.cc/books/%E7%94%9F%E6%AD%BB%E7%96%B2%E5%8A%B3.jpg",
+    cover: "%E7%94%9F%E6%AD%BB%E7%96%B2%E5%8A%B3.jpg",
     press: "作家出版社",
     published: "2012-10",
     ISBN: "9787506366748",
@@ -82,7 +81,7 @@ export default <BookItemType[]>[
   {
     title: "三体",
     author: ["刘慈欣"],
-    cover: "https://img.in-x.cc/books/%E4%B8%89%E4%BD%93.jpg",
+    cover: "%E4%B8%89%E4%BD%93.jpg",
     press: "重庆出版社",
     published: "2008-01",
     ISBN: "9787536692930",
@@ -99,7 +98,7 @@ export default <BookItemType[]>[
     author: ["[美]张纯如"],
     translator: ["鲁伊"],
     cover:
-      "https://img.in-x.cc/books/%E8%9A%95%E4%B8%9D%EF%BC%9A%E9%92%B1%E5%AD%A6%E6%A3%AE%E4%BC%A0.jpg",
+      "%E8%9A%95%E4%B8%9D%EF%BC%9A%E9%92%B1%E5%AD%A6%E6%A3%AE%E4%BC%A0.jpg",
     press: "中信出版社",
     published: "2011-04-01",
     ISBN: "9787508626277",
@@ -111,4 +110,7 @@ export default <BookItemType[]>[
     downloadLink:
       "https://drive.google.com/file/d/1WC45pYOaybdokIyzb6FCaS4VLj7Ez0c9/view",
   },
-];
+].map((v) => ({
+  ...v,
+  cover: `${env.IMG_BASE_URL}books/${v.cover}`,
+}));

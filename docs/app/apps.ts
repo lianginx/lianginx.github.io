@@ -3,13 +3,25 @@ import env from "../.vitepress/config/env";
 
 export default <AppItemType[]>[
   {
+    name: "SensibleSideButtons",
+    intro: "修复 macOS 中残废的鼠标侧键，恢复在 Windows 中顺畅的前进/后退",
+    link: "https://sensible-side-buttons.archagon.net/",
+    icon: "sensible-side-buttons.webp",
+    category: "系统增强",
+    updated: "2023-03-01",
+    charge: "免费开源",
+    size: "1.7 MB",
+    chip: ["AppleChip"],
+    tags: ["增强鼠标侧键"],
+  },
+  {
     name: "Scroll Reverser",
     intro: "反转滚动方向，对触控板和鼠标进行独立设置",
     link: "https://pilotmoon.com/scrollreverser/",
     icon: "scroll-reverser.webp",
     category: "系统增强",
     updated: "2023-02-25",
-    charge: "免费",
+    charge: "免费开源",
     size: "2.6 MB",
     chip: ["AppleChip"],
     tags: ["滚动翻转"],

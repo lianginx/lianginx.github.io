@@ -18,6 +18,10 @@ function tech(): DefaultTheme.SidebarGroup[] {
       collapsible: true,
       items: [
         {
+          text: "Dexie.js 入门教程",
+          link: "/tech/frontend/dexie-js-guide.md",
+        },
+        {
           text: "JavaScript 遍历数组的方法",
           link: "/tech/frontend/js-traversal-array.md",
         },

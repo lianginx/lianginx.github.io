@@ -1,3 +1,8 @@
+---
+tags:
+  - javascript
+---
+
 # JavaScript 遍历数组的方法
 
 ## 汇总

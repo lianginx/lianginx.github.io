@@ -22,6 +22,10 @@ function tech(): DefaultTheme.SidebarGroup[] {
           link: "/tech/frontend/dexie-js-guide.md",
         },
         {
+          text: "本地存储：localStorage 和 sessionStorage 的差异",
+          link: "/tech/frontend/js-local-storage.md",
+        },
+        {
           text: "JavaScript 遍历数组的方法",
           link: "/tech/frontend/js-traversal-array.md",
         },
@@ -132,6 +136,16 @@ function life(): DefaultTheme.SidebarGroup[] {
         {
           text: "Keychron K2 键盘使用说明",
           link: "/life/keychron-k2.md",
+        },
+      ],
+    },
+    {
+      text: "美食笔记",
+      collapsible: true,
+      items: [
+        {
+          text: "🍅番茄炖牛腩",
+          link: "/life/stewed-beef-brisket-with-tomato.md",
         },
       ],
     },

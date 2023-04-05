@@ -1,6 +1,6 @@
 ---
 tags:
-  - clashx
+  - clash
 ---
 
 # 如何使用 ClashX 允许局域网连接 Allow LAN

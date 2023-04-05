@@ -106,6 +106,10 @@ function tech(): DefaultTheme.SidebarGroup[] {
           text: "ClashX 局域网连接 Allow LAN",
           link: "/tech/other/clashx-allow-lan.md",
         },
+        {
+          text: "Clash for windows Mixin 配置",
+          link: "/tech/other/cfw-mixin.md",
+        },
       ],
     },
   ];

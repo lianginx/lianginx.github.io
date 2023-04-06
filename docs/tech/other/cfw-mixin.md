@@ -44,9 +44,9 @@ module.exports.parse = async (
 ) => {
   const extra = { // [!code focus:8]
     rules: [
-      ...content.rules,
       "DOMAIN-SUFFIX,bing.com,🚀 节点选择",
       "IP-CIDR,8.288.176.170/32,🚀 节点选择",
+      ...content.rules,
     ],
   };
   return { ...content, ...extra };
@@ -57,6 +57,6 @@ module.exports.parse = async (
 
 这里我想要修改 `rules` 配置项，它接收的值包含规则的字符串数组。
 
-因为我想要追加规则，而不是像之前 YAML 配置中那样覆盖规则，所以我使用 `content.rules` 获取原有的 `rules` 数组，合并自定义规则成为一个新数组。
+因为我想要追加规则，而不是像之前 YAML 配置中那样覆盖规则，所以我将自定义规则结合使用 `content.rules` 获取原有的 `rules` 项，合并为一个新的数组。
 
 最后将 `content` 和 `extra` 合并成一个新对象返回出去，CFW 会将返回的对象序列化后直接载入。

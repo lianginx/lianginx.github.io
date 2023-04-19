@@ -45,6 +45,10 @@ function tech(): DefaultTheme.SidebarGroup[] {
           text: "TypeScript 项目中使用 import 导入 JSON 文件",
           link: "/tech/frontend/ts-import-json.md",
         },
+        {
+          text: "Nuxt 3 如何使用 ECharts 图表",
+          link: "/tech/frontend/nuxt3-use-echarts.md",
+        },
       ],
     },
     {

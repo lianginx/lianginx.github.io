@@ -134,6 +134,14 @@ function life(): DefaultTheme.SidebarGroup[] {
       collapsible: true,
       items: [
         {
+          text: "Homebrew 安装与使用",
+          link: "/life/homebrew-guide.md",
+        },
+        {
+          text: "Mac Dock Bar 易用性调整",
+          link: "/life/mac-dock-bar.md",
+        },
+        {
           text: "使用 Docker 搭建 Minecraft 服务端",
           link: "/life/minecraft-server-docker.md",
         },

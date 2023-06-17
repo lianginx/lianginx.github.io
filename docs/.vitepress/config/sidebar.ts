@@ -114,6 +114,10 @@ function tech(): DefaultTheme.SidebarGroup[] {
           text: "Clash for windows Mixin 配置",
           link: "/tech/other/cfw-mixin.md",
         },
+        {
+          text: "配置 Clash 终端代理",
+          link: "/tech/other/clash-terminal-proxy.md",
+        },
       ],
     },
   ];

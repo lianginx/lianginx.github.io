@@ -130,17 +130,27 @@ function life(): DefaultTheme.SidebarGroup[] {
       items: [{ text: "README", link: "/life/" }],
     },
     {
-      text: "生活分享",
+      text: "macOS",
       collapsible: true,
       items: [
         {
-          text: "Homebrew 安装与使用",
-          link: "/life/homebrew-guide.md",
+          text: "macOS 允许安装任何来源软件",
+          link: "/life/mac-app-corruption-issue.md",
         },
         {
           text: "Mac Dock Bar 易用性调整",
           link: "/life/mac-dock-bar.md",
         },
+        {
+          text: "Homebrew 安装与使用",
+          link: "/life/homebrew-guide.md",
+        },
+      ],
+    },
+    {
+      text: "生活分享",
+      collapsible: true,
+      items: [
         {
           text: "使用 Docker 搭建 Minecraft 服务端",
           link: "/life/minecraft-server-docker.md",

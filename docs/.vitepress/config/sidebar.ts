@@ -3,6 +3,7 @@ import bookSidebar from "../../book/category";
 
 export default {
   "/tech/": tech(),
+  "/algorithm/": algorithm(),
   "/life/": life(),
   "/book/": bookSidebar,
 } as DefaultTheme.Sidebar;
@@ -199,6 +200,16 @@ function life(): DefaultTheme.SidebarGroup[] {
           link: "/life/xiaozhang-xiaoli.md",
         },
       ],
+    },
+  ];
+}
+
+function algorithm(): DefaultTheme.SidebarGroup[] {
+  return [
+    { text: "前言", items: [{ text: "README", link: "/algorithm/" }] },
+    {
+      text: "基础算法",
+      items: [{ text: "二分查找", link: "/algorithm/binary-search.md" }],
     },
   ];
 }

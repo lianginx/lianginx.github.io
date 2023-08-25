@@ -153,7 +153,7 @@ const array1 = [5, 12, 8, 130, 44];
 
 const index = array1.findLastIndex((element) => element > 45);
 
-console.log(index); // 130
+console.log(index); // 3
 ```
 
 ## reduce

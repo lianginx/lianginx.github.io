@@ -4,13 +4,16 @@ const tech: DefaultTheme.SidebarItem[] = [
   {
     text: '前言',
     collapsed: true,
-    items: [{ text: 'README', link: '/tech/' }],
+    items: [
+      { text: 'README', link: '/tech/' },
+    ],
   },
   {
     text: '全栈开发',
     base: '/tech/full-stack',
     items: [
       { text: '加密存储用户密码', link: '/save-password.md' },
+      { text: 'JSON Web Token 鉴权', link: '/json-web-token.md' },
     ],
   },
   {

@@ -1,19 +1,19 @@
 {
-  "name": "tech-note",
-  "version": "1.0.0",
+  "name": "blog",
+  "type": "module",
   "main": "index.js",
-  "author": "Liang",
-  "license": "MIT",
   "scripts": {
-    "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
-    "serve": "vitepress serve docs"
-  },
-  "devDependencies": {
-    "sass": "^1.57.0",
-    "vitepress": "^1.0.0-alpha.29"
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
   },
   "dependencies": {
-    "markdown-it-textual-uml": "^0.12.0"
+    "@antfu/eslint-config": "^2.2.2",
+    "markdown-it-textual-uml": "^0.16.0",
+    "vue": "^3.3.9"
+  },
+  "devDependencies": {
+    "sass": "^1.69.5",
+    "vitepress": "1.0.0-rc.31"
   }
 }

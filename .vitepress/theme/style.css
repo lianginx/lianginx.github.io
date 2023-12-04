@@ -1,0 +1,4 @@
+/* 平滑滚动 */
+:root {
+  scroll-behavior: smooth;
+}

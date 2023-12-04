@@ -1,6 +1,12 @@
+# build
 /node_modules
-/docs/.vitepress/dist/
+**/.vitepress/dist/
+**/.vitepress/cache/
+
+# macOS
 .DS_Store
+
+# lock files
 package-lock.json
 yarn.lock
 pnpm-lock.yaml

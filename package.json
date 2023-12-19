@@ -1,18 +1,22 @@
 {
   "name": "blog",
   "type": "module",
-  "main": "index.js",
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
-    "preview": "vitepress preview"
+    "preview": "vitepress preview",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix"
   },
   "dependencies": {
-    "@antfu/eslint-config": "^2.2.2",
     "markdown-it-textual-uml": "^0.16.0",
     "vue": "^3.3.9"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^2.2.2",
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "husky": "^8.0.3",
     "sass": "^1.69.5",
     "vitepress": "1.0.0-rc.31"
   }

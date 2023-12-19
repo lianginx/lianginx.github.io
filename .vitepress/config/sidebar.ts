@@ -20,6 +20,7 @@ const tech: DefaultTheme.SidebarItem[] = [
     text: '前端开发',
     base: '/tech/frontend',
     items: [
+      { text: 'Commitlint 使用指南', link: '/commitlint.md' },
       { text: 'Dexie.js 入门教程', link: '/dexie-js-guide.md' },
       { text: '本地存储：localStorage 和 sessionStorage 的差异', link: '/js-local-storage.md' },
       { text: 'JavaScript 遍历数组的方法', link: '/js-traversal-array.md' },

@@ -1,1 +1,0 @@
-import{d as o,c as a,k as e,t as s,o as c,_ as i}from"./framework.U_vFYqrf.js";const n={class:"title"},_={class:"subtitle"},l=o({__name:"Title",props:{title:{},subtitle:{}},setup(p){return(t,r)=>(c(),a("div",n,[e("h1",null,s(t.title),1),e("div",_,s(t.subtitle),1)]))}}),m=i(l,[["__scopeId","data-v-6ac7dbdd"]]),u={IMG_BASE_URL:"https://img.in-x.cc/"};export{m as T,u as e};

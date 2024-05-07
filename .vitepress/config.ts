@@ -12,7 +12,10 @@ export default defineConfig({
   description: 'Liang\'s Blog',
   appearance: true,
   lastUpdated: true,
-  head: [['link', { rel: 'icon', href: 'favicon.ico' }]],
+  head: [
+    ['link', { rel: 'icon', href: 'favicon.ico' }],
+    ['meta', { name: 'baidu-site-verification', content: 'codeva-J1JeqOLlFK' }], // 百度站长验证
+  ],
   themeConfig: {
     outline: 'deep',
     outlineTitle: '目录',

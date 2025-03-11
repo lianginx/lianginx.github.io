@@ -83,6 +83,7 @@ const life: DefaultTheme.SidebarItem[] = [
       { text: 'macOS 允许安装任何来源软件', link: '/life/mac-app-corruption-issue.md' },
       { text: 'Mac Dock Bar 易用性调整', link: '/life/mac-dock-bar.md' },
       { text: 'Homebrew 安装与使用', link: '/life/homebrew-guide.md' },
+      { text: '快速查询 Mac 磁盘信息', link: '/life/mac-query-disk-info.md' },
     ],
   },
   {

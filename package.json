@@ -2,7 +2,6 @@
   "name": "blog",
   "type": "module",
   "scripts": {
-    "prepare": "husky install",
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview",
@@ -15,9 +14,6 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.2.2",
-    "@commitlint/cli": "^18.4.3",
-    "@commitlint/config-conventional": "^18.4.3",
-    "husky": "^8.0.3",
     "sass": "^1.69.5",
     "vitepress": "1.0.0-rc.31"
   }

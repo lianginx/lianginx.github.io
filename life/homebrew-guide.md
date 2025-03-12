@@ -65,6 +65,10 @@ brew install --cask visual-studio-code
 brew install pnpm
 # 安装空格快速预览 Markdown 插件
 brew install --cask qlmarkdown
-# 安装 cakebrew（Homebrew 的 GUI 管理器）
-brew install --cask cakebrew
+```
+
+### GUI 管理工具
+
+```sh
+brew install --cask cork
 ```

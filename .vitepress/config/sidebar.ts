@@ -52,10 +52,6 @@ const tech: DefaultTheme.SidebarItem[] = [
       { text: 'VS Code 扩展收集', link: '/vscode-extensions' },
       { text: 'VS Code 图床扩展 PicGo 配置', link: '/vscode-picgo' },
       { text: 'macOS 常用浏览器使用说明', link: '/browser-instructions' },
-      { text: 'ClashX 局域网连接 Allow LAN', link: '/clashx-allow-lan' },
-      { text: 'Clash for windows Mixin 配置', link: '/cfw-mixin' },
-      { text: '配置 Clash 终端代理', link: '/clash-terminal-proxy' },
-      { text: 'Clash Verge 全局扩展脚本', link: '/clash-verge-rule-extension-script' },
     ],
   },
 ]

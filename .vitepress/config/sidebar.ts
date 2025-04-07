@@ -52,6 +52,7 @@ const tech: DefaultTheme.SidebarItem[] = [
       { text: 'VS Code 扩展收集', link: '/vscode-extensions' },
       { text: 'VS Code 图床扩展 PicGo 配置', link: '/vscode-picgo' },
       { text: 'macOS 常用浏览器使用说明', link: '/browser-instructions' },
+      { text: '远程主机不满足运行 VS Code 服务器的先决条件', link: '/vscode-remote-connection-failed' },
     ],
   },
 ]

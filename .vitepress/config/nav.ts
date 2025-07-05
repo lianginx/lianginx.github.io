@@ -1,10 +1,16 @@
 import type { DefaultTheme } from 'vitepress'
 
-export default [
+const navs: DefaultTheme.NavItem[] = [
   { text: '首页 HOME', link: '/' },
   { text: '技术 TECH', link: '/tech/' },
-  { text: '算法 ALGORITHM', link: '/algorithm/binary-search' },
-  { text: '日常 LIFE', link: '/life/gout-hua-guideline.md' },
-  { text: '应用 APP', link: '/app/' },
-  { text: '书籍 BOOK', link: '/book/' },
-] as DefaultTheme.NavItem[]
+  { text: '日常 LIFE', link: '/life/gout-hua-guideline' },
+  {
+    text: '工具 TOOL',
+    items: [
+      { text: 'Homebrew Search', link: 'https://brew.in-x.cc/', target: '_blank' },
+      { text: 'Crontab Guru', link: 'https://crontab.in-x.cc/', target: '_blank' },
+    ],
+  },
+]
+
+export default navs

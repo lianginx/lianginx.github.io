@@ -2,44 +2,48 @@ import type { DefaultTheme } from 'vitepress'
 
 const tech: DefaultTheme.SidebarItem[] = [
   {
-    text: '前言',
-    collapsed: true,
-    items: [
-      { text: 'README', link: '/tech/' },
-    ],
+    text: '导读',
+    link: '/tech/',
   },
   {
     text: '全栈开发',
     base: '/tech/full-stack',
     items: [
-      { text: '加密存储用户密码', link: '/save-password.md' },
-      { text: 'JSON Web Token 鉴权', link: '/json-web-token.md' },
+      { text: '加密存储用户密码', link: '/save-password' },
+      { text: 'JSON Web Token 鉴权', link: '/json-web-token' },
     ],
   },
   {
     text: '前端开发',
     base: '/tech/frontend',
     items: [
-      { text: 'Commitlint 使用指南', link: '/commitlint.md' },
-      { text: 'Dexie.js 入门教程', link: '/dexie-js-guide.md' },
-      { text: '本地存储：localStorage 和 sessionStorage 的差异', link: '/js-local-storage.md' },
-      { text: 'JavaScript 遍历数组的方法', link: '/js-traversal-array.md' },
-      { text: 'NPM 配置文件 .npmrc', link: '/npmrc.md' },
-      { text: 'Electron 打包网站项目', link: '/electron-builder.md' },
-      { text: 'Vue3 + Vite + Tailwind CSS', link: '/tailwindcss-vue3-vite.md' },
-      { text: 'TypeScript 项目中使用 import 导入 JSON 文件', link: '/ts-import-json.md' },
-      { text: 'Nuxt 3 如何使用 ECharts 图表', link: '/nuxt3-use-echarts.md' },
+      { text: 'Commitlint 使用指南', link: '/commitlint' },
+      { text: 'Dexie.js 入门教程', link: '/dexie-js-guide' },
+      { text: '本地存储：localStorage 和 sessionStorage 的差异', link: '/js-local-storage' },
+      { text: 'JavaScript 遍历数组的方法', link: '/js-traversal-array' },
+      { text: 'NPM 配置文件 .npmrc', link: '/npmrc' },
+      { text: 'Electron 打包网站项目', link: '/electron-builder' },
+      { text: 'Vue3 + Vite + Tailwind CSS', link: '/tailwindcss-vue3-vite' },
+      { text: 'TypeScript 项目中使用 import 导入 JSON 文件', link: '/ts-import-json' },
+      { text: 'Nuxt 3 如何使用 ECharts 图表', link: '/nuxt3-use-echarts' },
     ],
   },
   {
     text: '开发相关',
     base: '/tech/dev',
     items: [
-      { text: 'YAML 入门教程', link: '/yaml.md' },
-      { text: 'Github 远程库连接超时解决方案', link: '/github-timeout.md' },
-      { text: '.gitignore 文件不生效的解决方案', link: '/gitignore-invalid.md' },
-      { text: '代码编辑器和正则表达式', link: '/editor-and-regular.md' },
-      { text: '廖雪峰 GitHub 教程笔记', link: '/github.md' },
+      { text: 'YAML 入门教程', link: '/yaml' },
+      { text: 'Github 远程库连接超时解决方案', link: '/github-timeout' },
+      { text: '.gitignore 文件不生效的解决方案', link: '/gitignore-invalid' },
+      { text: '代码编辑器和正则表达式', link: '/editor-and-regular' },
+      { text: '廖雪峰 GitHub 教程笔记', link: '/github' },
+    ],
+  },
+  {
+    text: '算法学习',
+    base: '/tech/algorithm',
+    items: [
+      { text: '二分查找', link: '/binary-search' },
     ],
   },
   {
@@ -62,7 +66,7 @@ const algorithm: DefaultTheme.SidebarItem[] = [
     text: '基础算法',
     base: '/algorithm',
     items: [
-      { text: '二分查找', link: '/binary-search.md' },
+      { text: '二分查找', link: '/binary-search' },
     ],
   },
 ]
@@ -71,7 +75,7 @@ const life: DefaultTheme.SidebarItem[] = [
   {
     text: '健康指南',
     items: [
-      { text: '高尿酸血症与痛风指南', link: '/life/gout-hua-guideline.md' },
+      { text: '高尿酸血症与痛风指南', link: '/life/gout-hua-guideline' },
     ],
   },
   {
@@ -83,19 +87,19 @@ const life: DefaultTheme.SidebarItem[] = [
   {
     text: 'macOS',
     items: [
-      { text: 'macOS 允许安装任何来源软件', link: '/life/mac-app-corruption-issue.md' },
-      { text: 'Mac Dock Bar 易用性调整', link: '/life/mac-dock-bar.md' },
-      { text: 'Homebrew 安装与使用', link: '/life/homebrew-guide.md' },
-      { text: '快速查询 Mac 磁盘信息', link: '/life/mac-query-disk-info.md' },
+      { text: 'macOS 允许安装任何来源软件', link: '/life/mac-app-corruption-issue' },
+      { text: 'Mac Dock Bar 易用性调整', link: '/life/mac-dock-bar' },
+      { text: 'Homebrew 安装与使用', link: '/life/homebrew-guide' },
+      { text: '快速查询 Mac 磁盘信息', link: '/life/mac-query-disk-info' },
     ],
   },
   {
     text: '生活分享',
     items: [
-      { text: '使用 Docker 搭建 Minecraft 服务端', link: '/life/minecraft-server-docker.md' },
-      { text: '英语单词后缀 -er', link: '/life/er.md' },
-      { text: '【视频笔记】租房防骗避坑指南', link: '/life/renting-guide.md' },
-      { text: 'Keychron K2 键盘使用说明', link: '/life/keychron-k2.md' },
+      { text: '使用 Docker 搭建 Minecraft 服务端', link: '/life/minecraft-server-docker' },
+      { text: '英语单词后缀 -er', link: '/life/er' },
+      { text: '【视频笔记】租房防骗避坑指南', link: '/life/renting-guide' },
+      { text: 'Keychron K2 键盘使用说明', link: '/life/keychron-k2' },
     ],
   },
   {
@@ -103,7 +107,7 @@ const life: DefaultTheme.SidebarItem[] = [
     items: [
       {
         text: '🍅番茄炖牛腩',
-        link: '/life/stewed-beef-brisket-with-tomato.md',
+        link: '/life/stewed-beef-brisket-with-tomato',
       },
     ],
   },
@@ -112,11 +116,11 @@ const life: DefaultTheme.SidebarItem[] = [
     items: [
       {
         text: '网管',
-        link: '/life/internet-cafe-administrator.md',
+        link: '/life/internet-cafe-administrator',
       },
       {
         text: '小张和小丽',
-        link: '/life/xiaozhang-xiaoli.md',
+        link: '/life/xiaozhang-xiaoli',
       },
     ],
   },

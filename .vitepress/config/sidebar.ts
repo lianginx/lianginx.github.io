@@ -75,6 +75,12 @@ const life: DefaultTheme.SidebarItem[] = [
     ],
   },
   {
+    text: 'Windows',
+    items: [
+      { text: 'NSSM 使用说明', link: '/life/nssm.md' },
+    ],
+  },
+  {
     text: 'macOS',
     items: [
       { text: 'macOS 允许安装任何来源软件', link: '/life/mac-app-corruption-issue.md' },

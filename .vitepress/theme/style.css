@@ -1,4 +1,10 @@
-/* 平滑滚动 */
 :root {
+  /* 平滑滚动 */
   scroll-behavior: smooth;
+
+}
+
+* {
+  /* 隐藏 Windows 滚动条 */
+  scrollbar-width: none;
 }

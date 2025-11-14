@@ -7,7 +7,7 @@ import socialLinks from './config/socialLinks'
 
 export default defineConfig({
   base: '/',
-  srcDir: 'docs',
+  srcDir: 'src',
   lang: 'zh-CN',
   title: 'Liang\'s Blog',
   description: 'Liang\'s Blog',

@@ -1,3 +1,9 @@
+---
+tags:
+  - life
+  - instruction
+---
+
 # 珂芝（Kzzi）K75 Lite 说明书
 
 [下载官方说明书](https://en.kzzi.com/media/files/20240705/20240705164922_9738.pdf)

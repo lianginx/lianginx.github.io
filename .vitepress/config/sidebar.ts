@@ -61,16 +61,6 @@ const tech: DefaultTheme.SidebarItem[] = [
   },
 ]
 
-const algorithm: DefaultTheme.SidebarItem[] = [
-  {
-    text: '基础算法',
-    base: '/algorithm',
-    items: [
-      { text: '二分查找', link: '/binary-search' },
-    ],
-  },
-]
-
 const life: DefaultTheme.SidebarItem[] = [
   {
     text: '健康指南',
@@ -100,6 +90,7 @@ const life: DefaultTheme.SidebarItem[] = [
       { text: '英语单词后缀 -er', link: '/life/er' },
       { text: '【视频笔记】租房防骗避坑指南', link: '/life/renting-guide' },
       { text: 'Keychron K2 键盘使用说明', link: '/life/keychron-k2' },
+      { text: '珂芝 K75 Lite 说明书', link: '/life/kzzi-k75-lite' },
     ],
   },
   {
@@ -127,7 +118,6 @@ const life: DefaultTheme.SidebarItem[] = [
 ]
 
 export default {
-  '/tech/': tech,
-  '/algorithm/': algorithm,
-  '/life/': life,
-} as DefaultTheme.Sidebar
+  '/tech': tech,
+  '/life': life,
+}

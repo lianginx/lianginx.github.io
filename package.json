@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "markdown-it-textual-uml": "^0.16.0",
+    "vitepress-plugin-rss": "^0.4.1",
     "vue": "^3.5.17"
   },
   "devDependencies": {

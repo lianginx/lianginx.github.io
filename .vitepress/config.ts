@@ -1,5 +1,6 @@
 import markdownItTextualUml from 'markdown-it-textual-uml'
 import { defineConfig } from 'vitepress'
+import { RssPlugin } from 'vitepress-plugin-rss'
 
 import nav from './config/nav'
 import sidebar from './config/sidebar'
@@ -28,5 +29,13 @@ export default defineConfig({
     config: (md) => {
       md.use(markdownItTextualUml)
     },
+  },
+  vite: {
+    plugins: [RssPlugin({
+      title: 'Liang\'s Blog',
+      baseUrl: 'https://blog.in-x.cc',
+      author: { name: 'Liang', email: 'liang@in-x.cc' },
+      copyright: 'Copyright © 2022 Liang',
+    })],
   },
 })

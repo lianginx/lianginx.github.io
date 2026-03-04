@@ -81,6 +81,7 @@ const life: DefaultTheme.SidebarItem[] = [
       { text: 'Mac Dock Bar 易用性调整', link: '/life/mac-dock-bar' },
       { text: 'Homebrew 安装与使用', link: '/life/homebrew-guide' },
       { text: '快速查询 Mac 磁盘信息', link: '/life/mac-query-disk-info' },
+      { text: 'macOS Launchd 入门', link: '/life/mac-launchd' },
     ],
   },
   {

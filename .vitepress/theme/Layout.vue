@@ -1,15 +1,14 @@
 <script setup lang="ts">
-import { useData } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
+import TagGroup from './components/TagGroup.vue'
 
 const { Layout } = DefaultTheme
-const { frontmatter } = useData()
 </script>
 
 <template>
   <Layout>
     <template #doc-before>
-      <TagGroup v-if="frontmatter.tags" :items="frontmatter.tags" />
+      <TagGroup />
     </template>
   </Layout>
 </template>

@@ -1,11 +1,16 @@
 <script setup lang="ts">
-defineProps<{ items: string[] }>()
+import { useData } from 'vitepress'
+import { computed } from 'vue'
+
+const { frontmatter } = useData()
+
+const tags = computed<string[]>(() => frontmatter.value.tags ?? [])
 </script>
 
 <template>
-  <div class="root">
-    <div v-for="item of items" :key="item" class="tag">
-      {{ item }}
+  <div v-if="tags.length > 0" class="root">
+    <div v-for="tag of tags" :key="tag" class="tag">
+      {{ tag }}
     </div>
   </div>
 </template>

@@ -6,7 +6,7 @@ tags:
   - nodejs
 ---
 
-# indexedDB
+# Dexie.js 入门教程
 
 ## 简介
 
